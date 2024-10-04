@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - RudraX</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <style>
+     @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+      body {
+        background-image: url("https://i.im.ge/2024/10/04/kUWFBq.ff.jpeg");
+        background-size: cover;
+        background-position: center;
+        font-family: 'Nunito',sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+      }
+      .navbar {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999; /* Ensure it's always above content */
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+      .logo img {
+        height: 40px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .logo img:hover {
+        transform: scale(1.05);
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        margin-left: auto;
+      }
+
+      .nav-links li {
+        margin-right: 20px;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+
+      .login-btn {
+        background-color: #007bff;
+        color: white;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .contact-container {
+        max-width: 1000px;
+        height: 480px;
+        margin: 90px auto;
+        padding: 20px;
+        padding-bottom: 20px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .contact-form,
+      .contact-info {
+        flex: 1;
+        padding: 50px;
+        margin: 10px;
+      }
+
+      .contact-form h2,
+      .contact-info h2 {
+        margin-bottom: 20px;
+        color: #333;
+        text-align: center;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .contact-form button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .contact-form button:hover {
+        background-color: #0056b3;
+      }
+
+      .contact-info {
+        background-color: #f9f9f9;
+        padding: 30px;
+        border-radius: 10px;
+      }
+
+      .contact-info p {
+        margin: 10px 0;
+        color: #666;
+      }
+
+      .contact-info i {
+        font-size: 24px;
+        color: #007bff;
+        margin-right: 10px;
+        margin-top: 20px;
+      }
+
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .social-icons a {
+        color: #007bff;
+        font-size: 24px;
+        margin: 0 10px;
+        transition: color 0.3s;
+      }
+
+      .social-icons a:hover {
+        color: #0056b3;
+      }
+      .footer {
+        background-color: #fff;
+        color: #000;
+        padding: 0 20px;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        width: 96%;
+      }
+
+      .footer .container {
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .footer .row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .footer h4 {
+        color: #007bff;
+      }
+
+      .footer ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .footer ul li {
+        margin-bottom: 5px;
+      }
+
+      .footer form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .footer input[type="email"] {
+        padding: 10px;
+        border: 3px solid blue;
+        border-radius: 5px;
+        margin-right: 10px;
+        width: 300px;
+      }
+
+      .footer button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .footer button:hover {
+        background-color: #0056b3;
+      }
+
+      .horizontal-line {
+        border-top: 1px solid gray;
+        margin-top: 30px;
+      }
+
+      .copy {
+        margin-top: 20px;
+      }
+
+      @media (max-width: 768px) {
+        .contact-container {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="/Index.html">
+            <img src="https://i.im.ge/2024/10/03/kUTyTC.logoo.png" alt="RudraX Logo">
+        </a>
+        <a href="/Index.html.html">
+            <img src="https://i.im.ge/2024/10/04/khDDty.Territorial-Army-Crest-svg.png" alt="Satya Logo">
+        </a>
+        <a href="/Index.html.html">
+            <img src="https://i.im.ge/2024/10/04/khayCM.Cyber-Peace.png" alt="Cyber Peace Logo">
+        </a>
+        <a href="/Index.html.html">
+            <img src="https://i.im.ge/2024/10/04/khaE2D.satya.png" alt="Satya Logo">
+        </a>
+        </div>
+
+      <ul class="nav-links">
+          <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="feature.html">Features</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div>
+          <a href="login.html"><button class="login-btn">Login</button></a>
+      </div>
+  </nav>
+
+    <!-- Contact Container -->
+    <div class="contact-container">
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="YOUR_FORM_ACTION" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="text" name="subject" placeholder="Subject" required />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p>
+          <i class="fas fa-map-marker-alt"></i> 1234 RudraX St, Innovation City,
+          AI 45678
+        </p>
+        <p><i class="fas fa-phone"></i> +123 456 7890</p>
+        <p><i class="fas fa-envelope"></i> support@rudrax.com</p>
+
+        <!-- Social Icons -->
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h4>Features</h4>
+            <ul>
+              <li>Detect Videos</li>
+              <li>Detect Audio</li>
+              <li>Detect Image</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>Informations</h4>
+            <ul>
+              <li>Impact of deep fake</li>
+              <li>Research and development</li>
+              <li>Accuracy of deep fake</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>Support</h4>
+            <ul>
+              <li>FAQ, Contact</li>
+              <li>Technical Supports</li>
+              <li>Update and release Notes</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>Downloads</h4>
+            <ul>
+              <li>IOS, MAC</li>
+              <li>Android</li>
+              <li>Windows</li>
+            </ul>
+          </div>
+        </div>
+        <form action="YOUR_FORM_ACTION" method="POST">
+          <pre style="margin-right: 12px">Send Us an Email:</pre>
+          <input
+            style="margin-top: 10px"
+            type="email"
+            placeholder="Enter your email"
+            required
+          />
+          <button type="submit" style="width: 80px">Send</button>
+        </form>
+
+        <div class="horizontal-line"></div>
+        <div class="copy">&copy; 2024 RudraX. All rights reserved.</div>
+      </div>
+    </footer>
+  </body>
+</html>

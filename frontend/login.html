@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="/Index.html">
+                <img src="https://i.im.ge/2024/10/03/kUTyTC.logoo.png" alt="RudraX Logo">
+            </a>
+            <a href="/Index.html.html">
+                <img src="https://i.im.ge/2024/10/04/khDDty.Territorial-Army-Crest-svg.png" alt="Satya Logo">
+            </a>
+            <a href="/Index.html.html">
+                <img src="https://i.im.ge/2024/10/04/khayCM.Cyber-Peace.png" alt="Cyber Peace Logo">
+            </a>
+            <a href="/Index.html.html">
+                <img src="https://i.im.ge/2024/10/04/khaE2D.satya.png" alt="Satya Logo">
+            </a>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="feature.html">Features</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div>
+            <a href="login.html"><button class="login-btn">Login</button></a>
+        </div>
+    </nav>
+
+<!-- Main Content -->
+<main>
+    <div class="form-container">
+        <!-- Logo -->
+        <div class="logo-container">
+            <img src="https://i.im.ge/2024/10/03/kUIwRq.login.png" alt="RudraX Logo" class="form-logo" />
+        </div>
+
+        <!-- Login Form -->
+        <div id="login-form" class="form" style="display: block;">
+            <form id="loginForm">
+                <input type="text" id="login-email" placeholder="Enter email" required />
+                <input type="password" id="login-password" placeholder="Enter password" required />
+                <button type="submit">Login</button>
+            </form>
+             <!-- Social SignIn Buttons -->
+             <div class="social-signup">
+                <button class="google-btn">
+                    <i class="fab fa-google"></i> Sign In with Google
+                </button>
+                <button class="facebook-btn">
+                    <i class="fab fa-facebook-f"></i> Sign In with Facebook
+                </button>
+            </div>
+            <!-- Link to Sign Up -->
+            <pre>New user? <a href="#" id="show-signup">Sign up</a></pre>
+        </div>
+
+        <!-- Signup Form -->
+        <div id="signup-form" class="form" style="display: none;">
+            <form id="signupForm">
+                <input type="text" id="signup-name" placeholder="Enter your name" required />
+                <input type="text" id="signup-email" placeholder="Enter email" required />
+                <input type="password" id="signup-password" placeholder="Enter password" required />
+                <button type="submit">Create Account</button>
+            </form>
+
+            <!-- Social Signup Buttons -->
+            <div class="social-signup">
+                <button class="google-btn">
+                    <i class="fab fa-google"></i> Sign up with Google
+                </button>
+                <button class="facebook-btn">
+                    <i class="fab fa-facebook-f"></i> Sign up with Facebook
+                </button>
+            </div>
+
+            <!-- Link to Login -->
+            <pre>Already have an account? <a href="#" id="show-login">Login</a></pre>
+        </div>
+    </div>
+</main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>Features</h4>
+                    <ul>
+                        <li>Detect Videos</li>
+                        <li>Detect Audio</li>
+                        <li>Detect Image</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Informations</h4>
+                    <ul>
+                        <li>Impact of deep fake</li>
+                        <li>Research and development</li>
+                        <li>Accuracy of deep fake</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Support</h4>
+                    <ul>
+                        <li>FAQ, Contact</li>
+                        <li>Technical Supports</li>
+                        <li>Update and release Notes</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Downloads</h4>
+                    <ul>
+                        <li>IOS, MAC</li>
+                        <li>Android</li>
+                        <li>Windows</li>
+                    </ul>
+                </div>
+            </div>
+            <form action="YOUR_FORM_ACTION" method="POST">
+                <pre style="margin-right: 12px;">Send Us an Email:</pre>
+                <input style="margin-top: 10px;" type="email" placeholder="Enter your email" required>
+                <button type="submit" style="width: 80px;" >Send</button>
+            </form>
+
+            <div class="horizontal-line"></div>
+            <div class="copy">&copy; 2024 RudraX. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle between login and signup forms
+        const loginForm = document.getElementById('login-form');
+        const signupForm = document.getElementById('signup-form');
+        const showSignup = document.getElementById('show-signup');
+        const showLogin = document.getElementById('show-login');
+
+        showSignup.addEventListener('click', function() {
+            loginForm.style.display = 'none';
+            signupForm.style.display = 'block';
+        });
+
+        showLogin.addEventListener('click', function() {
+            signupForm.style.display = 'none';
+            loginForm.style.display = 'block';
+        });
+
+        // Redirect to home page after login
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form from submitting in the default way
+            window.location.href = 'home.html'; // Redirect to home.html
+        });
+
+        // Redirect to home page after signup
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form from submitting in the default way
+            window.location.href = 'home.html'; // Redirect to home.html
+        });
+    </script>
+</body>
+
+</html>

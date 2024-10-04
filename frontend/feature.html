@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <title>Fantastic Features</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+      body {
+        background-image: url("https://i.im.ge/2024/10/04/kUWFBq.ff.jpeg");
+        background-size: cover;
+        background-position: center;
+        font-family: 'Nunito',sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+      }
+      .navbar {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999; /* Ensure it's always above content */
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+      .logo img {
+        height: 40px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .logo img:hover {
+        transform: scale(1.05);
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        margin-left: auto;
+      }
+
+      .nav-links li {
+        margin-right: 20px;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+
+      .login-btn {
+        background-color: #007bff;
+        color: white;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 40px;
+        color:#fbfdff;
+        font-size: 40px;
+        
+      }
+
+      .features-container {
+          color: white;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+      }
+
+      .feature {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .feature:hover {
+          cursor: pointer;
+    transform: scale(1.20);
+    transition: all 0.3s ease;
+    
+}
+
+
+      .feature i {
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="/Index.html">
+            <img src="https://i.im.ge/2024/10/03/kUTyTC.logoo.png" alt="RudraX Logo">
+        </a>
+        <a href="/Index.html.html">
+            <img src="https://i.im.ge/2024/10/04/khDDty.Territorial-Army-Crest-svg.png" alt="Satya Logo">
+        </a>
+        <a href="/Index.html.html">
+            <img src="https://i.im.ge/2024/10/04/khayCM.Cyber-Peace.png" alt="Cyber Peace Logo">
+        </a>
+        <a href="/Index.html.html">
+            <img src="https://i.im.ge/2024/10/04/khaE2D.satya.png" alt="Satya Logo">
+        </a>
+        </div>
+
+      <ul class="nav-links">
+          <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="feature.html">Features</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div>
+          <a href="login.html"><button class="login-btn">Login</button></a>
+      </div>
+  </nav>
+    <!-- MAIn -->
+    <h1><u>Fantastic Features</u></h1>
+    <div class="features-container">
+      <div class="feature">
+        <i class="fas fa-brain"></i>
+        Real-Time Deep Fake Detection
+      </div>
+      <div class="feature">
+        <i class="fas fa-search"></i>
+        Comprehensive Media Analysis
+      </div>
+      <div class="feature">
+        <i class="fas fa-file-alt"></i>
+        Multi-Format Support
+      </div>
+      <div class="feature">
+        <i class="fas fa-user-friends"></i>
+        User-Friendly Interface
+      </div>
+      <div class="feature">
+        <i class="fas fa-tasks"></i>
+        Batch Processing
+      </div>
+      <div class="feature">
+        <i class="fas fa-shield-alt"></i>
+        Privacy and Data Security
+      </div>
+      <div class="feature">
+        <i class="fas fa-bell"></i>
+        Customizable Alerts and Notifications
+      </div>
+      <div class="feature">
+        <i class="fas fa-chart-bar"></i>
+        Detailed Reporting and Insights
+      </div>
+      <div class="feature">
+        <i class="fas fa-puzzle-piece"></i>
+        API Integration
+      </div>
+      <div class="feature">
+        <i class="fas fa-mobile-alt"></i>
+        Mobile Compatibility
+      </div>
+      <div class="feature">
+        <i class="fas fa-balance-scale"></i>
+        Ethical and Legal Guidance
+      </div>
+      <div class="feature">
+        <i class="fas fa-globe-americas"></i>
+        Support for Multiple Languages
+      </div>
+    </div>
+  </body>
+</html>

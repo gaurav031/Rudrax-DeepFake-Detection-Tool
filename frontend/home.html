@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RudraX</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional styles for the main container */
+        main {
+            height: 1000px;
+        }
+
+        .containerr {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            width: 90%;
+            height: auto;
+            max-width: 600px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            border: 2px solid #007bff;
+            margin: 50px;
+            margin-top: -75px;
+        }
+
+        h1 {
+            color: #040303;
+        }
+
+        .cta-button {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        .loader {
+            display: none;
+            margin-top: 10px;
+            color: #000;
+        }
+
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            background-color: #fff;
+            color: #000;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .footer input[type="email"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .footer button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .footer button:hover {
+            background-color: #0056b3;
+        }
+
+        #uploadedFile {
+            margin-top: 20px;
+            color: #000;
+            font-weight: bold;
+        }
+
+        video {
+            max-width: 100%;
+            margin-top: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            margin-top: 10px;
+        }
+
+        .pixelated {
+            image-rendering: pixelated;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="/Index.html">
+                <img src="https://i.im.ge/2024/10/03/kUTyTC.logoo.png" alt="RudraX Logo">
+            </a>
+            <a href="/Index.html.html">
+                <img src="https://i.im.ge/2024/10/04/khDDty.Territorial-Army-Crest-svg.png" alt="Satya Logo">
+            </a>
+            <a href="/Index.html.html">
+                <img src="https://i.im.ge/2024/10/04/khayCM.Cyber-Peace.png" alt="Cyber Peace Logo">
+            </a>
+            <a href="/Index.html.html">
+                <img src="https://i.im.ge/2024/10/04/khaE2D.satya.png" alt="Satya Logo">
+            </a>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="feature.html">Features</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div>
+            <a href="login.html"><button class="login-btn">Login</button></a>
+        </div>
+    </nav>
+
+    <!-- Container -->
+    <main>
+        <div class="containerr">
+            <h1>Welcome to <span style="color: red;">RudraX</span></h1>
+            <div style="text-align: center">
+                <input type="file" id="fileInput" />
+                <button class="cta-button" id="uploadButton">
+                    <i class="fas fa-cloud-upload-alt" style="margin-right: 8px;"></i> <!-- Cloud icon -->
+                    Upload Your File Here
+                </button>
+                <!-- Loader element -->
+                <div class="loader" id="loader">
+                    <i class="fas fa-spinner fa-spin"></i> Uploading...
+                </div>
+            </div>
+            <div id="uploadedFile"></div> <!-- Div to show uploaded file name and result -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>Features</h4>
+                    <ul>
+                        <li>Detect Videos</li>
+                        <li>Detect Audio</li>
+                        <li>Detect Image</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Informations</h4>
+                    <ul>
+                        <li>Impact of deep fake</li>
+                        <li>Research and development</li>
+                        <li>Accuracy of deep fake</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Support</h4>
+                    <ul>
+                        <li>FAQ, Contact</li>
+                        <li>Technical Supports</li>
+                        <li>Update and release Notes</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Downloads</h4>
+                    <ul>
+                        <li>IOS, MAC</li>
+                        <li>Android</li>
+                        <li>Windows</li>
+                    </ul>
+                </div>
+            </div>
+            <form action="YOUR_FORM_ACTION" method="POST">
+                <pre style="margin-right: 12px;">Send Us an Email:</pre>
+                <input style="margin-top: 10px;" type="email" placeholder="Enter your email" required>
+                <button type="submit" style="width: 80px;">Send</button>
+            </form>
+
+            <div class="horizontal-line"></div>
+            <div class="copy">&copy; 2024 RudraX. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('uploadButton').addEventListener('click', async () => {
+            const fileInput = document.getElementById('fileInput');
+            const file = fileInput.files[0];
+            const loader = document.getElementById('loader');
+            const uploadedFileDiv = document.getElementById('uploadedFile');
+
+            if (!file) {
+                alert('Please select a file to upload.');
+                return;
+            }
+
+            // Show loader
+            loader.style.display = 'block';
+            uploadedFileDiv.innerHTML = ''; // Clear previous results
+
+            const formData = new FormData();
+            formData.append('file', file);
+
+            try {
+                const response = await fetch('/upload', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (response.ok) {
+                    const result = await response.json();
+                    uploadedFileDiv.innerHTML = `
+                        <p style="color:black">File uploaded: ${file.name}</p>
+                        <p style="color:black">Result: ${result.message}</p>
+                        <p style="color:black">Real: ${result.real_percentage.toFixed(2)}%</p>
+                        <p style="color:black">Fake: ${result.fake_percentage.toFixed(2)}%</p>
+                    `;
+
+                    // Check the file type
+                    const fileType = file.type;
+                    if (fileType.startsWith('video/')) {
+                        const videoElement = document.createElement('video');
+                        videoElement.src = URL.createObjectURL(file);
+                        videoElement.controls = true; // Add controls to the video
+                        videoElement.style.maxWidth = '100%'; // Responsive video
+                        uploadedFileDiv.appendChild(videoElement);
+                    } else if (fileType.startsWith('image/')) {
+                        const imgElement = document.createElement('img');
+                        imgElement.src = URL.createObjectURL(file);
+                        imgElement.classList.add('pixelated'); // Add pixelated class for effect
+                        uploadedFileDiv.appendChild(imgElement);
+                    } else {
+                        uploadedFileDiv.innerHTML += `<p style="color:red">Unsupported file type. Please upload a video or an image.</p>`;
+                    }
+                } else {
+                    const errorData = await response.json();
+                    alert(`Error: ${errorData.error}`);
+                }
+            } catch (error) {
+                console.error('Error during file upload:', error);
+                alert('An error occurred while uploading the file.');
+            } finally {
+                loader.style.display = 'none'; // Hide loader
+            }
+        });
+    </script>
+</body>
+
+</html>

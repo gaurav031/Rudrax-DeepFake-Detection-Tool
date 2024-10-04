@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <title>Fantastic Features</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+      body {
+        background-image: url("https://i.im.ge/2024/10/04/kUWFBq.ff.jpeg");
+        background-size: cover;
+        background-position: center;
+        font-family: 'Nunito', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+      }
+      .navbar {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999; /* Ensure it's always above content */
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+      .logo img {
+        height: 40px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .logo img:hover {
+        transform: scale(1.05);
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        margin-left: auto;
+      }
+
+      .nav-links li {
+        margin-right: 20px;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+
+      .login-btn {
+        background-color: #007bff;
+        color: white;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        padding-top: 80px;
+        font-size: 40px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+      }
+      .containerr {
+        color: white;
+        gap: 40px;
+        width: 90%;
+        max-width: 900px;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+        margin-bottom: 50px;
+      }
+      h2 {
+        font-size: 26px;
+        margin-top: 20px;
+        text-transform: uppercase;
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 10px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-top: 10px;
+        text-align: justify;
+      }
+      
+      .footer {
+        background-color: #fff;
+        color: #000;
+        padding: 0 20px;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        width: 96%;
+      }
+
+      .footer .container {
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .footer .row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .footer h4 {
+        color: #007bff;
+      }
+
+      .footer ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .footer ul li {
+        margin-bottom: 5px;
+      }
+
+      .footer form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .footer input[type="email"] {
+        padding: 10px;
+        border: 3px solid blue;
+        border-radius: 5px;
+        margin-right: 10px;
+        width: 300px;
+      }
+
+      .footer button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .footer button:hover {
+        background-color: #0056b3;
+      }
+
+      .horizontal-line {
+        border-top: 1px solid gray;
+        margin-top: 30px;
+      }
+
+      .copy {
+        margin-top: 20px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="/Index.html">
+            <img src="https://i.im.ge/2024/10/03/kUTyTC.logoo.png" alt="RudraX Logo">
+        </a>
+        <a href="/Index.html.html">
+            <img src="https://i.im.ge/2024/10/04/khDDty.Territorial-Army-Crest-svg.png" alt="Satya Logo">
+        </a>
+        <a href="/Index.html.html">
+            <img src="https://i.im.ge/2024/10/04/khayCM.Cyber-Peace.png" alt="Cyber Peace Logo">
+        </a>
+        <a href="/Index.html.html">
+            <img src="https://i.im.ge/2024/10/04/khaE2D.satya.png" alt="Satya Logo">
+        </a>
+        </div>
+
+      <ul class="nav-links">
+          <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="feature.html">Features</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div>
+          <a href="login.html"><button class="login-btn">Login</button></a>
+      </div>
+  </nav>
+     <!-- Main Content -->
+     <h1>About Us</h1>
+     <div class="containerr">
+       <h2>Our Mission</h2>
+       <p>
+         In an era where digital content is both ubiquitous and easily
+         manipulated, RudraX stands as a beacon of truth and authenticity. Our
+         mission is to empower individuals, organizations, and communities with
+         cutting-edge tools to detect and combat the growing threat of deep
+         fakes—manipulated media that can spread misinformation, damage
+         reputations, and undermine trust.
+       </p>
+ 
+       <h2>What is RudraX?</h2>
+       <p>
+         RudraX is our state-of-the-art AI-driven platform designed to detect
+         deep fake videos, audios, and images with precision and speed.
+         Leveraging the latest advancements in machine learning, neural networks,
+         and image forensics, RudraX offers a powerful solution to identify and
+         analyze manipulated media, ensuring that what you see, hear, and share
+         is genuine.
+       </p>
+ 
+       <h2>Why Choose RudraX?</h2>
+       <p>
+         As deep fake technology becomes increasingly sophisticated, the need for
+         reliable detection tools has never been greater. RudraX was created to
+         address this challenge, offering a user-friendly, yet powerful platform
+         that can handle the complexities of modern media manipulation. Whether
+         you're a journalist verifying the authenticity of a video, a business
+         protecting your brand, or an individual concerned about misinformation,
+         RudraX provides the tools you need to stay ahead of the curve.
+       </p>
+ 
+       <h2>Our Technology</h2>
+       <p>
+         At the heart of RudraX lies a robust AI engine that has been
+         meticulously trained on vast datasets of authentic and synthetic media.
+         By analyzing minute details such as facial expressions, voice patterns,
+         and pixel-level anomalies, RudraX can detect even the most subtle deep
+         fakes. Our continuous learning algorithms ensure that RudraX evolves
+         with the latest deep fake generation techniques, maintaining its
+         effectiveness in an ever-changing digital landscape.
+       </p>
+ 
+       <h2>Our Commitment to Privacy</h2>
+       <p>
+         We understand the importance of privacy and security in today's digital
+         world. RudraX is built with strict data protection measures to ensure
+         that your media files are processed securely and confidentially. We
+         never store your data without permission and adhere to the highest
+         standards of data encryption and privacy practices.
+       </p>
+     </div>
+
+       <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h4>Features</h4>
+            <ul>
+              <li>Detect Videos</li>
+              <li>Detect Audio</li>
+              <li>Detect Image</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>Informations</h4>
+            <ul>
+              <li>Impact of deep fake</li>
+              <li>Research and development</li>
+              <li>Accuracy of deep fake</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>Support</h4>
+            <ul>
+              <li>FAQ, Contact</li>
+              <li>Technical Supports</li>
+              <li>Update and release Notes</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>Downloads</h4>
+            <ul>
+              <li>IOS, MAC</li>
+              <li>Android</li>
+              <li>Windows</li>
+            </ul>
+          </div>
+        </div>
+        <form action="YOUR_FORM_ACTION" method="POST">
+          <pre style="margin-right: 12px">Send Us an Email:</pre>
+          <input
+            style="margin-top: 10px"
+            type="email"
+            placeholder="Enter your email"
+            required
+          />
+          <button type="submit" style="width: 80px">Send</button>
+        </form>
+
+        <div class="horizontal-line"></div>
+        <div class="copy">&copy; 2024 RudraX. All rights reserved.</div>
+      </div>
+    </footer>
+  </body>
+</html>

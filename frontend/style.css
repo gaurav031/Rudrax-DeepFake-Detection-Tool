@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-image: url('https://i.im.ge/2024/10/03/kUFZoy.home.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    margin: 0;
+    height: max-content;
+    padding: 0;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dimming effect */
+    z-index: 0; /* Below the content */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgb(252, 251, 251);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999; /* Ensure it's always above content */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Logo inside the form container */
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-logo {
+    width: 100px; /* Adjust the size according to your preference */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.form-logo:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+
+
+
+.form-container {
+    background-color: rgba(6, 7, 10, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.form-logo {
+    width: 100px;
+    height: auto;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 95%;
+}
+
+/* Social Signup Buttons */
+.social-signup {
+    margin-top: 20px;
+}
+
+.google-btn {
+    background-color: #db4437;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 95%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.facebook-btn {
+    background-color: #3b5998;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 95%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-btn i, .facebook-btn i {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.google-btn:hover, .facebook-btn:hover {
+    opacity: 0.9;
+}
+
+p {
+    margin-top: 15px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+.logo img {
+    height: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.login-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Main content styles */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    padding-top: 70px; /* Adjusted for navbar height */
+}
+.containerr{
+            position: relative; /* Ensure the container is positioned above the overlay */
+            z-index: 1; /* Bring the text in front of the overlay */
+            text-align: center;
+            z-index: 1;
+            padding-top: 30px; /* Ensure content isn't hidden behind Navbar */
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+p {
+    font-size: 20px;
+    font-style: italic;
+    margin: 10px 0;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+pre {
+    font-size: 20px;
+    margin: 10px 0;
+    color: rgb(0, 0, 0);
+}
+
+
+.cta-button {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+.form-container {
+    background-color: rgba(235, 238, 244, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 400px;
+    height: 450px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.form-toggle {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #5574f0;
+    color: #f1f3f5;
+    border: 1px solid #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #007bff;
+    color: #040202;
+}
+
+button.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.form {
+    display: none;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.footer {
+    background-color: #fff;
+    color: #000;
+    padding: 0 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer h4 {
+    color: #007bff;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 5px;
+}
+
+.footer form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.footer input[type="email"] {
+    padding: 10px;
+    border: 3px solid blue;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 300px;
+}
+
+.footer button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer button:hover {
+    background-color: #0056b3;
+}
+
+.horizontal-line {
+    border-top: 1px solid gray;
+    margin-top: 30px;
+}
+
+.copy {
+    margin-top: 20px;
+}
